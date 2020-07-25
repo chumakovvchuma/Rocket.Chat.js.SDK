@@ -2,8 +2,8 @@ import { INewUserAPI } from './interfaces'
 
 // The API user, should be provisioned on build with local Rocket.Chat
 export const apiUser: INewUserAPI = {
-  username: process.env.ADMIN_USERNAME || 'chumakovv',
-  password: process.env.ADMIN_PASS || 'Chumachuma007'
+  username: process.env.ADMIN_USERNAME || 'wiseuser',
+  password: process.env.ADMIN_PASS || 'wisepass'
 }
 
 // The Bot user, will attempt to login and run methods in tests
