@@ -5,7 +5,7 @@ export let password = process.env.ROCKETCHAT_PASSWORD || 'wisepass'
 // export let ldap = (process.env.ROCKETCHAT_AUTH === 'ldap')
 
 // Connection settings - Enable SSL by default if Rocket.Chat URL contains https
-export let host = process.env.ROCKETCHAT_URL || '40.69.16.107'
+export let host = process.env.ROCKETCHAT_URL || 'localhost:3000'
 export let useSsl = (process.env.ROCKETCHAT_USE_SSL)
   ? ((process.env.ROCKETCHAT_USE_SSL || '').toString().toLowerCase() === 'true')
   : ((process.env.ROCKETCHAT_URL || '').toString().toLowerCase().startsWith('https'))
@@ -15,9 +15,9 @@ export let timeout = 20 * 1000 // 20 seconds
 export let rooms = (process.env.ROCKETCHAT_ROOM)
   ? (process.env.ROCKETCHAT_ROOM || '').split(',').map((room) => room.trim())
   : []
-export let allPublic = (process.env.LISTEN_ON_ALL_PUBLIC || 'true').toLowerCase() === 'true'
-export let dm = (process.env.RESPOND_TO_DM || 'true').toLowerCase() === 'true'
-export let livechat = (process.env.RESPOND_TO_LIVECHAT || 'true').toLowerCase() === 'true'
+export let allPublic = (process.env.LISTEN_ON_ALL_PUBLIC || 'false').toLowerCase() === 'true'
+export let dm = (process.env.RESPOND_TO_DM || 'false').toLowerCase() === 'true'
+export let livechat = (process.env.RESPOND_TO_LIVECHAT || 'false').toLowerCase() === 'true'
 export let edited = (process.env.RESPOND_TO_EDITED || 'false').toLowerCase() === 'true'
 
 // Message attribute settings
