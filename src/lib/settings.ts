@@ -1,7 +1,7 @@
 
 // Login settings - LDAP needs to be explicitly enabled
-export let username = process.env.ROCKETCHAT_USER || 'bot'
-export let password = process.env.ROCKETCHAT_PASSWORD || 'pass'
+export let username = process.env.ROCKETCHAT_USER || 'wiseuser'
+export let password = process.env.ROCKETCHAT_PASSWORD || 'wisepass'
 export let ldap = (process.env.ROCKETCHAT_AUTH === 'ldap')
 
 // Connection settings - Enable SSL by default if Rocket.Chat URL contains https
