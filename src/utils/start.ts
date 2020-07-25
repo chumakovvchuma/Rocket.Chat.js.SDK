@@ -15,10 +15,10 @@ async function start () {
     demo(msg).catch((e) => console.error(e))
   }, {
     rooms: ['general'],
-    allPublic: false,
+    allPublic: true,
     dm: true,
     edited: true,
-    livechat: false
+    livechat: true
   })
 }
 
